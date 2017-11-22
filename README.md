@@ -41,7 +41,7 @@ from bga import BGA
 num_pop = 30
 problem_dimentions = 10
 
-test = BGA(pop_shape=(num_pop, problem_dimentions), method=sum_ones, p_c=0.8, p_m=0.2, max_round = 1000, early_stop_rounds=None, verbose = None, maximum=True)
+test = BGA(pop_shape=(num_pop, problem_dimentions), method=values, p_c=0.8, p_m=0.2, max_round = 1000, early_stop_rounds=None, verbose = None, maximum=True)
 best_solution, best_fitness = test.run()
 ```
 
@@ -63,7 +63,7 @@ def values(arr):
 num_pop = 30
 problem_dimentions = 10
 
-test = BGA(pop_shape=(num_pop, problem_dimentions), method=sum_ones, p_c=0.8, p_m=0.2, max_round = 1000, early_stop_rounds=None, verbose = None, maximum=True)
+test = BGA(pop_shape=(num_pop, problem_dimentions), method=values, p_c=0.8, p_m=0.2, max_round = 1000, early_stop_rounds=None, verbose = None, maximum=True)
 best_solution, best_fitness = test.run()
 ```
 
